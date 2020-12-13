@@ -29,7 +29,7 @@ It will start executing code on port 3001
 
 Now Upload File from react aPPLICATION
 
-I am also attaching postman collection to test the API for refrences.
+I am also attaching postman collection to test the API for refrences. name of file ionenergy.postman_collection.json
 
 
 
