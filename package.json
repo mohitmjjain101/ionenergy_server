@@ -1,0 +1,21 @@
+{
+  "name": "therometer_webserver",
+  "version": "1.0.1",
+  "description": "This Application contains REST API for saving and fetching data of sensors from the API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "busboy": "^0.3.1",
+    "cassandra-driver": "^4.6.1",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.0",
+    "mongodb": "^3.6.3",
+    "multer": "^1.4.2",
+    "save": "^2.4.0"
+  }
+}
