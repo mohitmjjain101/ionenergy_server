@@ -1,0 +1,98 @@
+{
+	"info": {
+		"_postman_id": "fc4a4d09-d8f8-4578-b5f3-546186a31946",
+		"name": "ionenergy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getDataByTimestamp",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"startTime\":1424814853000,\r\n    \"endTime\":142451111111130000001\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/getDataByTimestamp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"getDataByTimestamp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "uploadFile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/mohitjain/Desktop/THERM0001 - Copy.json"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3001/uploadFile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"uploadFile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "saveData",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"data\": [\r\n        {\r\n            \"ts\": 14248148730013,\r\n            \"val\": 48\r\n        },\r\n        {\r\n            \"ts\": 14248148830002,\r\n            \"val\": 98\r\n        },\r\n        {\r\n            \"ts\": 14248148930001,\r\n            \"val\": 34\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/saveData",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"saveData"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
